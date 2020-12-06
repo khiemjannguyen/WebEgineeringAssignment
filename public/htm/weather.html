@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Weather.</title>
+</head>
+<body class="bg-dark">
+<!-- navbar -->
+<nav class="navbar navbar-default static-top navbar-expand-md bg-dark navbar-dark justify-content-center">
+    <a class="navbar-brand" href="../htm/webex1.htm">
+        Weather.
+    </a>
+    <!-- dropdown menu -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="mx-2 my-auto d-inline w-100">
+            <div class="input-group">
+                <input id="searchbar" class="form-control mr-2 " type="text" placeholder="Location..."
+                       aria-label="Search">
+                <span class="input-group-append">
+                <button id="submitbtn" class="btn bg-white btn-outline-dark" type="button">Submit</button>
+                </span>
+            </div>
+        </form>
+    </div>
+</nav>
+<!-- today's weather -->
+<div class="container-fluid d-flex justify-content-center bg-dark">
+    <div class="col-12 grid-margin stretch-card mt-2 mb-3 " style="height: 400px">
+        <!--current weather card-->
+        <div class="card card-weather h-100">
+            <div class="card-body align-content-center">
+                <div class="row justify-content-center">
+                    <div class="p-2 ml-3">
+                        <!-- general infos -->
+                        <div class="weather-date-location">
+                            <h3 id="today">How's the weather?</h3>
+                            <p class="text-gray">
+                                <span id="weather-date" class="weather-date"></span>
+                                <span id="weather-location" class="weather-location"></span>
+                            </p>
+                        </div>
+                        <!-- weather description -->
+                        <div class="weather-data d-flex">
+                            <div class="mr-auto">
+                                <h4 id="temp" class="display-3"></h4>
+                                <p id="currdescription"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- icon -->
+                    <div class="p-2 d-none d-md-block">
+                        <img id="currcardbgimg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 5 day weather forecast cards -->
+<div class="container-fluid bg-dark">
+    <div id="forecast" class="row justify-content-center  bg-dark" style="visibility:hidden">
+        <!-- day1 -->
+        <div class="card bg-grey mb-4"  >
+            <div class="card-header text-center ">
+                <h5 id="nday1"></h5>
+            </div>
+            <div class="card-body text-center">
+                <img id="imgday1">
+            </div>
+            <div id="tday1" class="card-header text-center"></div>
+        </div>
+        <!-- day2 -->
+        <div class="card bg-grey mb-4"  >
+            <div class="card-header text-center ">
+                <h5 id="nday2"></h5>
+            </div>
+            <div class="card-body text-center">
+                <img id="imgday2">
+            </div>
+            <div id="tday2" class="card-header text-center"></div>
+        </div>
+        <!-- day3 -->
+        <div class="card bg-grey mb-4"  >
+            <div class="card-header text-center ">
+                <h5 id="nday3"></h5>
+            </div>
+            <div class="card-body text-center">
+                <img id="imgday3">
+            </div>
+            <div id="tday3" class="card-header text-center"></div>
+        </div>
+        <!-- day4 -->
+        <div class="card bg-grey mb-4"  >
+            <div class="card-header text-center ">
+                <h5 id="nday4"></h5>
+            </div>
+            <div class="card-body text-center">
+                <img id="imgday4">
+            </div>
+            <div id="tday4" class="card-header text-center"></div>
+        </div>
+        <!-- day5-->
+        <div class="card bg-grey mb-4"  >
+            <div class="card-header text-center ">
+                <h5 id="nday5"></h5>
+            </div>
+            <div class="card-body text-center">
+                <img id="imgday5">
+            </div>
+            <div id="tday5" class="card-header text-center"></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+<script src="../js/weather.js"></script>
+</body>
+</html>
