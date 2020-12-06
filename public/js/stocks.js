@@ -151,8 +151,8 @@ function getIntervalIntra(endpoint) {
                 }
                 //draw chart
                 drawChart(closeval, xaxis);
-            }else{
-                document.getElementById('header').innerHTML = 'You reached the limit of calls! Be patient buddy.';
+            } else {
+                document.getElementById('header').innerHTML = 'You reached the limit of calls or your input is invalid!';
                 document.getElementById('comdesrc').style.visibility = 'hidden';
                 document.getElementById('upperinf').style.visibility = 'hidden';
                 console.log('Too Many Calls');
@@ -160,11 +160,9 @@ function getIntervalIntra(endpoint) {
             }
         })
         .catch(err => {
-          alert(err);
+            alert(err);
         })
 }
-
-
 
 
 ///general get close value(array) for rest + draw Chart
@@ -203,7 +201,7 @@ function getIntervalGen(endpoint, interval, time) {
                     xaxis.push(date);
                 }
                 drawChart(closeval, xaxis);
-            }else{
+            } else {
                 document.getElementById('header').innerHTML = 'You reached the limit of calls!Be patient buddy.';
                 document.getElementById('comdesrc').style.visibility = 'hidden';
                 document.getElementById('upperinf').style.visibility = 'hidden';

@@ -1,6 +1,7 @@
 document.getElementById('nyt').addEventListener("click", loadnyt);
 document.getElementById('ts').addEventListener("click", loadts);
 
+//load news from New York Times
 function loadnyt() {
     //refresh newscards by clearing newscardcontainer
     var newscard = document.getElementById(`newscardcontainer`);
@@ -39,6 +40,7 @@ function loadnyt() {
         .catch(err => alert(err))
 }
 
+//load news from tagesschau
 function loadts() {
     console.log("loadts");
 
