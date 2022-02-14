@@ -20,7 +20,7 @@ The project consists of a website with 4 different interfaces: "DHBW Landing Pag
 ## Getting Started
 
 ### Prerequisities
-* a web browser installed
+* a web browser installed \
 If necessary:
 * Get an API Key from https://openweathermap.org/api and insert here (in *public/js/weather.js*)
 ``` sh
