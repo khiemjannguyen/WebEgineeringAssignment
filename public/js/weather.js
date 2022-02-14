@@ -1,5 +1,5 @@
 /// Global Variable
-var api_key = `80db0e776dad41010dd395b6b1799cb4` // no longer valid
+var api_key = `` // insert API key
 
 document.getElementById('submitbtn').addEventListener("click", loadweather);
 

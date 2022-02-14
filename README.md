@@ -21,16 +21,15 @@ The project consists of a website with 4 different interfaces: "DHBW Landing Pag
 
 ### Prerequisities
 * a web browser installed
-If necessary:
 * Get an API Key from https://openweathermap.org/api and insert here (in *public/js/weather.js*)
 ``` sh
 /// Global Variable
-var api_key = `80db0e776dad41010dd395b6b1799cb4` // active
+var api_key = `` // insert API Key
 ```
 * Get an API Key from https://www.alphavantage.co and insert here (in *public/js/stocks.js*)
 ``` sh
 /// Global Variable
-var api_key = '60PM6DXWU7PZFZ0L' // active
+var api_key = '' // insert API Key
 ```
 
 ### Installation
