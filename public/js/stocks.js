@@ -1,5 +1,6 @@
 ///Global Variable
 var period = 'today';
+var api_key = `J8ALM0DJVUC8F3YD` // no longer valid
 //for chart label
 var symbol = '';
 document.getElementById('submitbtn').addEventListener("click", loadAll);
@@ -20,7 +21,7 @@ function loadInfo() {
     console.log('load info cards');
     // get searcharg keyword
     var searcharg1 = document.getElementById("searchbar").value;
-    var endpoint1 = `https://www.alphavantage.co/query?function=OVERVIEW&symbol=${searcharg1}&apikey=J8ALM0DJVUC8F3YD`;
+    var endpoint1 = `https://www.alphavantage.co/query?function=OVERVIEW&symbol=${searcharg1}&apikey=` + api_key;
     console.log(endpoint1);
 
     fetch(endpoint1)
@@ -66,7 +67,7 @@ function loadData() {
         case 'today':
             console.log('today');
             //Intraday
-            var endpointto = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${searcharg}&interval=5min&apikey=J8ALM0DJVUC8F3YD`;
+            var endpointto = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${searcharg}&interval=5min&apikey=` + api_key;
             console.log(endpointto);
             getIntervalIntra(endpointto);
 
@@ -74,35 +75,35 @@ function loadData() {
         case '5d':
             console.log('5d');
             //Adjusted Daily
-            var endpoint5d = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${searcharg}&apikey=J8ALM0DJVUC8F3YD`;
+            var endpoint5d = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${searcharg}&apikey=` + api_key;
             console.log(endpoint5d);
             getIntervalGen(endpoint5d, 5, daily);
             break;
         case '1m':
             console.log('1m');
             //Adjusted Daily
-            var endpoint1m = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${searcharg}&apikey=J8ALM0DJVUC8F3YD`;
+            var endpoint1m = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${searcharg}&apikey=` + api_key
             console.log(endpoint1m);
             getIntervalGen(endpoint1m, 30, daily);
             break;
         case '6m':
             console.log('6m');
             //Adjusted Weekly
-            var endpoint6m = `https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY_ADJUSTED&symbol=${searcharg}&apikey=J8ALM0DJVUC8F3YD`;
+            var endpoint6m = `https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY_ADJUSTED&symbol=${searcharg}&apikey=` + api_key;
             console.log(endpoint6m);
             getIntervalGen(endpoint6m, 24, weekly);
             break;
         case '1y':
             console.log('1y');
             //Adjusted Monthly
-            var endpoint1y = `https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY_ADJUSTED&symbol=${searcharg}&apikey=J8ALM0DJVUC8F3YD`;
+            var endpoint1y = `https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY_ADJUSTED&symbol=${searcharg}&apikey=` + api_key;
             console.log(endpoint1y);
             getIntervalGen(endpoint1y, 12, monthly);
             break;
         case '6y':
             console.log('6y');
             //Adjusted Monthly
-            var endpoint6y = `https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY_ADJUSTED&symbol=${searcharg}&apikey=J8ALM0DJVUC8F3YD`;
+            var endpoint6y = `https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY_ADJUSTED&symbol=${searcharg}&apikey=` + api_key;
             console.log(endpoint6y);
             getIntervalGen(endpoint6y, 72, monthly);
             break;

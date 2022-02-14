@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dcae87f-cb1c-4af3-ac17-884c4851fb0a" name="Default Changelist" comment="added some new comments&#10;added error handling in stocks.js &amp; weather.js" />
+    <list default="true" id="1dcae87f-cb1c-4af3-ac17-884c4851fb0a" name="Default Changelist" comment="added images">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +39,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -51,6 +54,12 @@
       <workItem from="1607282545291" duration="2022000" />
       <workItem from="1607286735855" duration="95000" />
       <workItem from="1607287049967" duration="931000" />
+      <workItem from="1607288286561" duration="564000" />
+      <workItem from="1607331404760" duration="102000" />
+      <workItem from="1607331578715" duration="706000" />
+      <workItem from="1607332595808" duration="425000" />
+      <workItem from="1607803659721" duration="205000" />
+      <workItem from="1615214697434" duration="137000" />
     </task>
     <task id="LOCAL-00001" summary="added some new comments&#10;added error handling in stocks.js &amp; weather.js">
       <created>1607286249842</created>
@@ -59,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607286249842</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added images">
+      <created>1607288359689</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607288359689</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,12 +95,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added some new comments&#10;added error handling in stocks.js &amp; weather.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some new comments&#10;added error handling in stocks.js &amp; weather.js" />
+    <MESSAGE value="added images" />
+    <option name="LAST_COMMIT_MESSAGE" value="added images" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="313" y="-789" key="Vcs.Push.Dialog.v2" timestamp="1607286261984">
+    <state x="469" y="188" key="SettingsEditor" timestamp="1615214751720">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="469" y="188" key="SettingsEditor/283.1105.1440.806/0.25.1920.1055@0.25.1920.1055" timestamp="1615214751720" />
+    <state x="313" y="-789" key="Vcs.Push.Dialog.v2" timestamp="1607288364538">
       <screen x="-247" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="313" y="-789" key="Vcs.Push.Dialog.v2/0.23.1440.813/-247.-1057.1920.1057@-247.-1057.1920.1057" timestamp="1607286261984" />
+    <state x="313" y="-789" key="Vcs.Push.Dialog.v2/0.23.1440.813/-247.-1057.1920.1057@-247.-1057.1920.1057" timestamp="1607288364538" />
   </component>
 </project>

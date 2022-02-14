@@ -1,3 +1,6 @@
+/// Global Variable
+var api_key = `80db0e776dad41010dd395b6b1799cb4` // no longer valid
+
 document.getElementById('submitbtn').addEventListener("click", loadweather);
 
 //load weather
@@ -6,7 +9,7 @@ function loadweather(){
     // get searcharg keyword
     var searcharg = document.getElementById("searchbar").value;
     // get endpoint with searcharg
-    var endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${searcharg}&units=metric&appid=80db0e776dad41010dd395b6b1799cb4`;
+    var endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${searcharg}&units=metric&appid=` + api_key;
     console.log(endpoint);
 
     fetch(endpoint)
@@ -58,7 +61,7 @@ function loadforecast(lon, lat) {
     //console.log("Click");
     //get endpoint for weather forecast api
     var endpointlf = 'https://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + lon +
-        '&exclude=current,minutely,hourly,alerts&units=metric&appid=80db0e776dad41010dd395b6b1799cb4';
+        '&exclude=current,minutely,hourly,alerts&units=metric&appid=' + api_key;
     fetch(endpointlf)
         .then(response => response.json())
         .then(data1 => {
