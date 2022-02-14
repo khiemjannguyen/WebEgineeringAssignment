@@ -1,6 +1,6 @@
 ///Global Variable
 var period = 'today';
-var api_key = `J8ALM0DJVUC8F3YD` // no longer valid
+var api_key = `60PM6DXWU7PZFZ0L` // no longer valid
 //for chart label
 var symbol = '';
 document.getElementById('submitbtn').addEventListener("click", loadAll);
