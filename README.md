@@ -44,7 +44,7 @@ var api_key = '' // insert API Key
 ## Usage
 
 ### Run the Project
-1. Open your folder, where you cloned the repository and navigate to public -> htm:
+1. Open your folder, where you cloned the repository and navigate to public -> htm
 2. Right click on *webex.html* and open with your browser of choice.
 
 ## Screenshots
